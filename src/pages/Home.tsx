@@ -1,10 +1,7 @@
 
 import Categories from '../components/Categories/Categories';
 import Hero from '../components/Hero/Hero';
-
-import nike1 from '../assets/nike-1.jpg';
-import nike2 from '../assets/nike-2.jpg';
-import nike3 from '../assets/nike-3.jpg';
+import GraphQuery from './GraphQuery';
 
 const Home = () => {
 	return (
@@ -15,38 +12,7 @@ const Home = () => {
 			<div className="container new-arrivals-container">
 				<h2 className="title">New Arrivals</h2>
 				<div className="products">
-					<div className="product">
-						<img src={nike1} className="product-img" alt="" />
-						<div className="product-content">
-							<div className="flex-row">
-								<h3>Nike Air Max</h3>
-								<p className="price">$500</p>
-							</div>
-							<button className="btn">Add to Cart</button>
-						</div>
-					</div>
-
-					<div className="product">
-						<img src={nike2} className="product-img" alt="" />
-						<div className="product-content">
-							<div className="flex-row">
-								<h3>Nike Air Max</h3>
-								<p className="price">$500</p>
-							</div>
-							<button className="btn">Add to Cart</button>
-						</div>
-					</div>
-
-					<div className="product">
-						<img src={nike3} className="product-img" alt="" />
-						<div className="product-content">
-							<div className="flex-row">
-								<h3>Nike Air Max</h3>
-								<p className="price">$500</p>
-							</div>
-							<button className="btn">Add to Cart</button>
-						</div>
-					</div>
+			    <GraphQuery/>
 				</div>
 			</div>
 			<div className="container">

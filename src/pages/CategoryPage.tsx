@@ -22,7 +22,7 @@ const CategoryPage = () => {
 
 	useEffect(() => {
 		const fetchShoes = async () => {
-			const  shoes : any = await request("https://ap-south-1.cdn.hygraph.com/content/cm5xw6y8q009m07w46jk3i0fd/master", `
+			const  {shoes} : any = await request("https://ap-south-1.cdn.hygraph.com/content/cm5xw6y8q009m07w46jk3i0fd/master", `
 	   { 
 	shoes(where: {category: {slug: "${category}"}}, first: 50) {
 	  id

@@ -27,7 +27,7 @@ const SingleProduct = () => {
 	useEffect(() => {
 
 		 const fetchProduct = async () => {
-			const shoe: any = await request("https://ap-south-1.cdn.hygraph.com/content/cm5xw6y8q009m07w46jk3i0fd/master", `
+			const {shoe} : any = await request("https://ap-south-1.cdn.hygraph.com/content/cm5xw6y8q009m07w46jk3i0fd/master", `
 			{
 				shoe(where: {slug:"${slug}"}){
 				 id
