@@ -1,6 +1,4 @@
 import { useNavigate, useParams } from 'react-router-dom';
-
-import nike1 from '../../assets/nike-1.jpg';
 import './index.css';
 import { useState, useEffect } from 'react';
 import request from 'graphql-request';
@@ -24,12 +22,12 @@ const SingleProduct = () => {
 		}})
 	const navigate = useNavigate();
 
-	const {slug, category}= useParams();
+	const {slug}= useParams();
 
 	useEffect(() => {
 
 		 const fetchProduct = async () => {
-			const {shoe} = await request("https://ap-south-1.cdn.hygraph.com/content/cm5xw6y8q009m07w46jk3i0fd/master", `
+			const shoe: any = await request("https://ap-south-1.cdn.hygraph.com/content/cm5xw6y8q009m07w46jk3i0fd/master", `
 			{
 				shoe(where: {slug:"${slug}"}){
 				 id

@@ -20,7 +20,7 @@ const Categories = () => {
 	useEffect(() => {
 
 		const fetchCategories = async () => {
-			const {categories} = await request("https://ap-south-1.cdn.hygraph.com/content/cm5xw6y8q009m07w46jk3i0fd/master",`
+			const category : any = await request("https://ap-south-1.cdn.hygraph.com/content/cm5xw6y8q009m07w46jk3i0fd/master",`
 			{
 
 			categories {
@@ -31,7 +31,7 @@ const Categories = () => {
 			}
 			}
 			}`)
-			setCategories(categories);
+			setCategories(category);
 		}
 		fetchCategories();
 	},[])

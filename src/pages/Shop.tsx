@@ -21,7 +21,7 @@ const Shop = () => {
 
 	useEffect(() => {
 		const fetchSneakers = async () => {
-			const { shoes } = await request(
+			const  shoes : any = await request(
 				"https://ap-south-1.cdn.hygraph.com/content/cm5xw6y8q009m07w46jk3i0fd/master",
 				`
          { 
