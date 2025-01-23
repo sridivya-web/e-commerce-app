@@ -7,7 +7,7 @@ import { Link, NavLink } from 'react-router-dom';
  const Navbar = () => {
 	const [showLinks, setShowLinks] = useState(false);
 
-	const linksRef = useRef(null);
+	const linksRef = useRef<HTMLDivElement>(null);
 
 	const toggleLinks = () => {
 		setShowLinks(!showLinks);
